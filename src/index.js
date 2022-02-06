@@ -2,11 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Movies from './components/Movies';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import Series from './components/Series';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="movies" element={<Movies />} />
+      <Route path="series" element={<Series />} />
+      
+    </Routes>
+  </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

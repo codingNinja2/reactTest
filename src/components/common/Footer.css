@@ -1,0 +1,35 @@
+.row-1 {
+    color: #E0E1E4;
+}
+
+ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 15px;  
+}
+
+ul img {
+    height: 40px !important;
+}
+
+.copy {
+    padding-left: 32px;
+}
+
+.c-1 {
+    height: 150px;
+}
+
+@media screen and (max-width: 480px) {
+    .c-1 {
+        height: auto;
+    }
+
+    .c-1 ul{
+        flex-direction: column;
+    }
+
+    ul img {
+        height: 20px !important;
+    }
+}
